@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SSE Investments — Financial Clarity in an Uncertain World</title>
+  <meta name="description" content="SSE Investments transforms your ambitious vision into tangible results through disciplined execution and expert financial guidance." />
+  <meta name="theme-color" content="#00173a" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container navbar__inner">
+      <!-- Logo -->
+      <a href="#" class="navbar__logo" id="navbar-logo">
+        <img src="public/SSE INV Logo.png" alt="SSE Investments Logo" class="navbar__logo-img" />
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="navbar__links" id="navbar-links">
+        <li><a href="#services" class="navbar__link" id="nav-services">Services</a></li>
+        <li><a href="#consultancy" class="navbar__link" id="nav-consultancy">Consultancy</a></li>
+        <li><a href="#business" class="navbar__link" id="nav-business">Business</a></li>
+        <li><a href="#about" class="navbar__link" id="nav-about">We Are</a></li>
+      </ul>
+
+      <!-- CTA Button -->
+      <a href="#contact" class="navbar__cta" id="navbar-cta">Follow Us</a>
+
+      <!-- Hamburger (mobile) -->
+      <button class="navbar__hamburger" id="hamburger-btn" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+    <a href="#services" class="mobile-nav__link">Services</a>
+    <a href="#consultancy" class="mobile-nav__link">Consultancy</a>
+    <a href="#business" class="mobile-nav__link">Business</a>
+    <a href="#about" class="mobile-nav__link">We Are</a>
+    <a href="#contact" class="btn btn--primary">Follow Us</a>
+  </div>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" id="hero">
+    <!-- Large faded background text -->
+    <div class="hero__bg-text" aria-hidden="true">SSE INVESTMENTS</div>
+
+    <div class="container hero__inner">
+      <!-- LEFT: Content -->
+      <div class="hero__content">
+        <!-- Headline -->
+        <h1 class="hero__headline" id="hero-headline">
+          Financial Clarity in an<br/>Uncertain World.
+        </h1>
+
+        <!-- Subtext -->
+        <p class="hero__subtext" id="hero-subtext">
+          Transforming your ambitious vision into tangible results through disciplined execution and expert guidance.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="hero__actions" id="hero-actions">
+          <a href="#appointment" class="btn btn--primary" id="btn-appointment">Get Appointment</a>
+          <a href="#stories" class="btn btn--ghost" id="btn-stories">View Success Stories</a>
+          <button class="btn btn--icon" id="btn-arrow" aria-label="Learn more">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <line x1="7" y1="17" x2="17" y2="7" />
+              <polyline points="7,7 17,7 17,17" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- RIGHT: Portrait + Stats -->
+      <div class="hero__portrait-area">
+        <!-- Portrait Image -->
+        <img
+          src="public/Hero-image.webp"
+          alt="SSE Investments Director"
+          class="hero__portrait"
+          id="hero-portrait"
+          loading="eager"
+        />
+
+        <!-- Floating Stats Card -->
+        <div class="hero__stats-card" id="stats-card">
+          <div class="hero__stats-card-header">
+            <span class="hero__stats-card-label">Total Investment</span>
+            <span class="hero__stats-card-dots" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+          <div class="hero__stats-card-value" id="stats-value">$0</div>
+          <div class="hero__chart" id="stats-chart">
+            <!-- Bar chart bars — heights set by JS -->
+            <div class="hero__chart-bar hero__chart-bar--light" style="height: 30%"></div>
+            <div class="hero__chart-bar hero__chart-bar--navy" style="height: 55%"></div>
+            <div class="hero__chart-bar hero__chart-bar--gold" style="height: 75%"></div>
+            <div class="hero__chart-bar hero__chart-bar--light" style="height: 40%"></div>
+            <div class="hero__chart-bar hero__chart-bar--navy" style="height: 90%"></div>
+            <div class="hero__chart-bar hero__chart-bar--gold" style="height: 100%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TRUSTED COMPANIES ========== -->
+  <section class="trusted" id="trusted">
+    <div class="container trusted__inner">
+      <h2 class="trusted__headline reveal" id="trusted-headline">
+        Fueling Growth for Companies<br/>You <span>Know</span> and <span>Trust</span>
+      </h2>
+
+      <div class="trusted__logos reveal" id="trusted-logos">
+        <span class="trusted__logo trusted__logo--zoom">zoom</span>
+        <span class="trusted__logo trusted__logo--asus">/ASUS</span>
+        <span class="trusted__logo trusted__logo--aecom">AECOM</span>
+        <span class="trusted__logo trusted__logo--stripe">stripe</span>
+        <span class="trusted__logo trusted__logo--ebay">ebay</span>
+        <span class="trusted__logo trusted__logo--tencent">Tencent</span>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
