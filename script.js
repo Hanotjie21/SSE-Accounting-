@@ -12,6 +12,7 @@
   document.addEventListener('DOMContentLoaded', function () {
     initNavbarScroll();
     initMobileMenu();
+    initRevealStagger();
     initScrollReveal();
     initCounterAnimation();
     initSmoothScroll();
@@ -67,6 +68,23 @@
         hamburger.setAttribute('aria-expanded', 'false');
         mobileNav.setAttribute('aria-hidden', 'true');
         document.body.style.overflow = '';
+      });
+    });
+  }
+
+  // ============================================
+  // STAGGER REVEALS FOR POST-HERO CARD GROUPS
+  // ============================================
+  function initRevealStagger() {
+    var groups = document.querySelectorAll(
+      '.services-showcase__grid, .values__grid, .why__list, .industry-list, .proof-strip__inner'
+    );
+
+    groups.forEach(function (group) {
+      var items = group.querySelectorAll('.reveal, article, span');
+
+      items.forEach(function (item, index) {
+        item.style.transitionDelay = Math.min(index * 70, 420) + 'ms';
       });
     });
   }
