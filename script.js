@@ -1,5 +1,5 @@
 /**
- * SSE Investments — Interactive Script
+ * SSE Accounting Firm - Interactive Script
  * Handles: scroll animations, counter, mobile menu, navbar scroll effect
  */
 
@@ -107,19 +107,19 @@
   }
 
   // ============================================
-  // COUNTER ANIMATION ($0 → $76000)
+  // COUNTER ANIMATION (0 to 6 service areas)
   // ============================================
   function initCounterAnimation() {
     var statsValue = document.getElementById('stats-value');
     var statsCard = document.getElementById('stats-card');
     if (!statsValue || !statsCard) return;
 
-    var targetValue = 76000;
+    var targetValue = 6;
     var duration = 2000; // ms
     var hasAnimated = false;
 
     if (!('IntersectionObserver' in window)) {
-      statsValue.textContent = '$' + targetValue.toLocaleString();
+      statsValue.textContent = targetValue.toLocaleString();
       return;
     }
 
@@ -157,7 +157,7 @@
       var easedProgress = 1 - Math.pow(1 - progress, 3);
       var current = Math.floor(start + (end - start) * easedProgress);
 
-      element.textContent = '$' + current.toLocaleString();
+      element.textContent = current.toLocaleString();
 
       if (progress < 1) {
         requestAnimationFrame(step);

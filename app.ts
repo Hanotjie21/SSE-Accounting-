@@ -1,5 +1,5 @@
 /**
- * SSE Investments — TypeScript Module
+ * SSE Accounting Firm - TypeScript Module
  * Type-safe definitions, DOM utilities, and animation controllers.
  */
 
@@ -28,7 +28,7 @@ interface ChartBar {
   variant: 'navy' | 'gold' | 'light';
 }
 
-/** Company logo entry */
+/** Industry entry */
 interface CompanyLogo {
   name: string;
   cssClass: string;
@@ -58,16 +58,17 @@ interface ScrollRevealConfig {
 // ============================================
 
 const NAV_ITEMS: NavItem[] = [
+  { label: 'About', href: '#about', id: 'nav-about' },
   { label: 'Services', href: '#services', id: 'nav-services' },
-  { label: 'Consultancy', href: '#consultancy', id: 'nav-consultancy' },
-  { label: 'Business', href: '#business', id: 'nav-business' },
-  { label: 'We Are', href: '#about', id: 'nav-about' },
+  { label: 'Industries', href: '#industries', id: 'nav-industries' },
+  { label: 'Leadership', href: '#leadership', id: 'nav-leadership' },
+  { label: 'Contact', href: '#contact', id: 'nav-contact' },
 ];
 
 const STATS_DATA: StatCard = {
-  label: 'Total Investment',
-  value: 76000,
-  prefix: '$',
+  label: 'Service Focus',
+  value: 6,
+  prefix: '',
   chartBars: [
     { heightPercent: 30, variant: 'light' },
     { heightPercent: 55, variant: 'navy' },
@@ -79,12 +80,12 @@ const STATS_DATA: StatCard = {
 };
 
 const COMPANY_LOGOS: CompanyLogo[] = [
-  { name: 'Zoom', cssClass: 'trusted__logo--zoom', displayText: 'zoom' },
-  { name: 'ASUS', cssClass: 'trusted__logo--asus', displayText: '/ASUS' },
-  { name: 'AECOM', cssClass: 'trusted__logo--aecom', displayText: 'AECOM' },
-  { name: 'Stripe', cssClass: 'trusted__logo--stripe', displayText: 'stripe' },
-  { name: 'eBay', cssClass: 'trusted__logo--ebay', displayText: 'ebay' },
-  { name: 'Tencent', cssClass: 'trusted__logo--tencent', displayText: 'Tencent' },
+  { name: 'Retail', cssClass: 'industry-list__item', displayText: 'Retail' },
+  { name: 'Logistics and Transport', cssClass: 'industry-list__item', displayText: 'Logistics and Transport' },
+  { name: 'Fishing Industry', cssClass: 'industry-list__item', displayText: 'Fishing Industry' },
+  { name: 'Hospitality and Tourism', cssClass: 'industry-list__item', displayText: 'Hospitality and Tourism' },
+  { name: 'Construction', cssClass: 'industry-list__item', displayText: 'Construction' },
+  { name: 'SMEs', cssClass: 'industry-list__item', displayText: 'Small and Medium Enterprises' },
 ];
 
 // ============================================
@@ -257,7 +258,7 @@ class AnimationController {
 // APP INITIALIZATION
 // ============================================
 
-class SSEInvestmentsApp {
+class SSEAccountingApp {
   private animationController: AnimationController;
 
   constructor() {
@@ -319,7 +320,7 @@ class SSEInvestmentsApp {
 
 // Export for module usage
 export {
-  SSEInvestmentsApp,
+  SSEAccountingApp,
   AnimationController,
   Easing,
   qs,

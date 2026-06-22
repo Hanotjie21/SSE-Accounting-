@@ -3,33 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SSE Investments — Financial Clarity in an Uncertain World</title>
-  <meta name="description" content="SSE Investments transforms your ambitious vision into tangible results through disciplined execution and expert financial guidance." />
+  <title>SSE Accounting Firm | Accounting & Business Advisory in Walvis Bay</title>
+  <meta name="description" content="SSE Accounting Firm provides tailored accounting, tax, payroll, compliance and business advisory services to SMEs and growing enterprises across Namibia." />
   <meta name="theme-color" content="#00173a" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
-  <!-- ========== NAVBAR ========== -->
   <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
     <div class="container navbar__inner">
-      <!-- Logo -->
-      <a href="#" class="navbar__logo" id="navbar-logo">
-        <img src="public/SSE INV Logo.png" alt="SSE Investments Logo" class="navbar__logo-img" />
+      <a href="#hero" class="navbar__logo" id="navbar-logo" aria-label="SSE Accounting Firm home">
+        <img src="public/SSE INV Logo.png" alt="SSE Accounting Firm logo" class="navbar__logo-img" />
       </a>
 
-      <!-- Desktop Nav Links -->
       <ul class="navbar__links" id="navbar-links">
-        <li><a href="#services" class="navbar__link" id="nav-services">Services</a></li>
-        <li><a href="#consultancy" class="navbar__link" id="nav-consultancy">Consultancy</a></li>
-        <li><a href="#business" class="navbar__link" id="nav-business">Business</a></li>
-        <li><a href="#about" class="navbar__link" id="nav-about">We Are</a></li>
+        <li><a href="#about" class="navbar__link">About</a></li>
+        <li><a href="#services" class="navbar__link">Services</a></li>
+        <li><a href="#industries" class="navbar__link">Industries</a></li>
+        <li><a href="#leadership" class="navbar__link">Leadership</a></li>
+        <li><a href="#contact" class="navbar__link">Contact</a></li>
       </ul>
 
-      <!-- CTA Button -->
-      <a href="#contact" class="navbar__cta" id="navbar-cta">Follow Us</a>
+      <a href="mailto:directorklazen@outlook.com" class="navbar__cta" id="navbar-cta">Email Us</a>
 
-      <!-- Hamburger (mobile) -->
       <button class="navbar__hamburger" id="hamburger-btn" aria-label="Toggle menu" aria-expanded="false">
         <span></span>
         <span></span>
@@ -38,99 +33,276 @@
     </div>
   </nav>
 
-  <!-- Mobile Nav Overlay -->
   <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+    <a href="#about" class="mobile-nav__link">About</a>
     <a href="#services" class="mobile-nav__link">Services</a>
-    <a href="#consultancy" class="mobile-nav__link">Consultancy</a>
-    <a href="#business" class="mobile-nav__link">Business</a>
-    <a href="#about" class="mobile-nav__link">We Are</a>
-    <a href="#contact" class="btn btn--primary">Follow Us</a>
+    <a href="#industries" class="mobile-nav__link">Industries</a>
+    <a href="#leadership" class="mobile-nav__link">Leadership</a>
+    <a href="#contact" class="btn btn--primary">Contact</a>
   </div>
 
-  <!-- ========== HERO SECTION ========== -->
-  <section class="hero" id="hero">
-    <!-- Large faded background text -->
-    <div class="hero__bg-text" aria-hidden="true">SSE INVESTMENTS</div>
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero__bg-text" aria-hidden="true">SSE ACCOUNTING</div>
 
-    <div class="container hero__inner">
-      <!-- LEFT: Content -->
-      <div class="hero__content">
-        <!-- Headline -->
-        <h1 class="hero__headline" id="hero-headline">
-          Financial Clarity in an<br/>Uncertain World.
-        </h1>
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="eyebrow">Walvis Bay, Namibia</p>
+          <h1 class="hero__headline" id="hero-headline">
+            Financial clarity for growing Namibian businesses.
+          </h1>
+          <p class="hero__subtext" id="hero-subtext">
+            SSE Accounting Firm provides tailored accounting, tax, payroll, compliance and business advisory support for small, medium and growing enterprises.
+          </p>
 
-        <!-- Subtext -->
-        <p class="hero__subtext" id="hero-subtext">
-          Transforming your ambitious vision into tangible results through disciplined execution and expert guidance.
+          <div class="hero__actions" id="hero-actions">
+            <a href="#contact" class="btn btn--primary" id="btn-appointment">Book a Consultation</a>
+            <a href="#services" class="btn btn--ghost" id="btn-stories">View Services</a>
+            <a class="btn btn--icon" href="#about" aria-label="Learn more about SSE Accounting Firm">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <line x1="7" y1="17" x2="17" y2="7" />
+                <polyline points="7,7 17,7 17,17" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__portrait-area">
+          <img
+            src="public/Hero-image.webp"
+            alt="SSE Accounting Firm leadership"
+            class="hero__portrait"
+            id="hero-portrait"
+            loading="eager"
+          />
+
+          <div class="hero__stats-card" id="stats-card">
+            <div class="hero__stats-card-header">
+              <span class="hero__stats-card-label">Service Focus</span>
+              <span class="hero__stats-card-dots" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+            </div>
+            <div class="hero__stats-card-value" id="stats-value">0</div>
+            <p class="hero__stats-card-note">core business support areas</p>
+            <div class="hero__chart" id="stats-chart">
+              <div class="hero__chart-bar hero__chart-bar--light" style="height: 45%"></div>
+              <div class="hero__chart-bar hero__chart-bar--navy" style="height: 70%"></div>
+              <div class="hero__chart-bar hero__chart-bar--gold" style="height: 85%"></div>
+              <div class="hero__chart-bar hero__chart-bar--light" style="height: 55%"></div>
+              <div class="hero__chart-bar hero__chart-bar--navy" style="height: 95%"></div>
+              <div class="hero__chart-bar hero__chart-bar--gold" style="height: 100%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro section" id="about">
+      <div class="container intro__grid">
+        <div class="section__heading reveal">
+          <p class="eyebrow">About the Firm</p>
+          <h2>Trusted financial guidance with a local business heartbeat.</h2>
+        </div>
+        <div class="intro__copy reveal">
+          <p>
+            SSE Accounting Firm is a professional accounting and business advisory firm based in Walvis Bay. Under the leadership of Shante Klazen, the firm provides tailored financial, accounting, tax, payroll and business support services to small, medium and growing enterprises across Namibia.
+          </p>
+          <p>
+            The firm is committed to accurate financial information, regulatory compliance and sustainable business growth through client-focused support, professional service standards and strong community involvement.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="vision section section--tint" id="vision">
+      <div class="container split-grid">
+        <article class="statement reveal">
+          <span>Vision</span>
+          <h2>To be one of Namibia's most trusted and innovative accounting firms.</h2>
+          <p>Empowering businesses through financial excellence and strategic guidance.</p>
+        </article>
+        <article class="statement reveal">
+          <span>Mission</span>
+          <h2>Reliable, professional and personalized accounting solutions.</h2>
+          <p>Helping businesses remain compliant, improve financial performance and achieve long-term success.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="values section" id="values">
+      <div class="container">
+        <div class="section__heading section__heading--center reveal">
+          <p class="eyebrow">Core Values</p>
+          <h2>How SSE Accounting Firm works with every client.</h2>
+        </div>
+        <div class="values__grid">
+          <article class="value-card reveal"><h3>Integrity</h3><p>Upholding the highest ethical standards.</p></article>
+          <article class="value-card reveal"><h3>Professionalism</h3><p>Delivering quality service and expertise.</p></article>
+          <article class="value-card reveal"><h3>Accountability</h3><p>Taking ownership of client success.</p></article>
+          <article class="value-card reveal"><h3>Confidentiality</h3><p>Always protecting client information.</p></article>
+          <article class="value-card reveal"><h3>Excellence</h3><p>Continuously improving service delivery.</p></article>
+          <article class="value-card reveal"><h3>Community Commitment</h3><p>Supporting local businesses and charitable initiatives.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section section--tint" id="services">
+      <div class="container">
+        <div class="section__heading reveal">
+          <p class="eyebrow">Services Offered</p>
+          <h2>Accounting and advisory support for daily operations and long-term decisions.</h2>
+        </div>
+        <div class="services__grid">
+          <article class="service-card reveal">
+            <h3>Accounting & Bookkeeping</h3>
+            <ul>
+              <li>Monthly bookkeeping services</li>
+              <li>General ledger maintenance</li>
+              <li>Bank reconciliations</li>
+              <li>Financial statement preparation</li>
+              <li>Management accounts</li>
+            </ul>
+          </article>
+          <article class="service-card reveal">
+            <h3>Tax Services</h3>
+            <ul>
+              <li>VAT registrations and submissions</li>
+              <li>PAYE administration</li>
+              <li>Income tax returns</li>
+              <li>Tax compliance reviews</li>
+              <li>Tax planning and advisory</li>
+            </ul>
+          </article>
+          <article class="service-card reveal">
+            <h3>Payroll Services</h3>
+            <ul>
+              <li>Payroll processing</li>
+              <li>Payslip preparation</li>
+              <li>PAYE and SSC submissions</li>
+              <li>Employee records management</li>
+            </ul>
+          </article>
+          <article class="service-card reveal">
+            <h3>Financial Management</h3>
+            <ul>
+              <li>Budget preparation</li>
+              <li>Cash flow management</li>
+              <li>Financial reporting</li>
+              <li>Business performance analysis</li>
+              <li>Internal financial controls</li>
+            </ul>
+          </article>
+          <article class="service-card reveal">
+            <h3>Business Advisory</h3>
+            <ul>
+              <li>Business registrations</li>
+              <li>Company secretarial services</li>
+              <li>Business process improvement</li>
+              <li>Financial system implementation</li>
+              <li>Strategic planning support</li>
+            </ul>
+          </article>
+          <article class="service-card reveal">
+            <h3>Compliance Services</h3>
+            <ul>
+              <li>Regulatory compliance assistance</li>
+              <li>Annual returns</li>
+              <li>Corporate governance support</li>
+              <li>Statutory reporting</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="why section" id="why">
+      <div class="container why__grid">
+        <div class="section__heading reveal">
+          <p class="eyebrow">Why Choose SSE Accounting Firm?</p>
+          <h2>Dedicated support shaped around your business needs.</h2>
+        </div>
+        <div class="why__list">
+          <article class="why-item reveal"><h3>Personalized Service</h3><p>Every client receives dedicated support tailored to their unique business needs.</p></article>
+          <article class="why-item reveal"><h3>Professional Expertise</h3><p>Practical accounting knowledge and industry experience combine to provide reliable financial solutions.</p></article>
+          <article class="why-item reveal"><h3>Local Understanding</h3><p>Being based in Walvis Bay gives the firm insight into local business conditions and regulatory requirements.</p></article>
+          <article class="why-item reveal"><h3>Client-Centered Approach</h3><p>Long-term relationships are built through trust, responsiveness and exceptional service.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="industries section section--tint" id="industries">
+      <div class="container">
+        <div class="section__heading section__heading--center reveal">
+          <p class="eyebrow">Industries Served</p>
+          <h2>Support for businesses across Namibia's active sectors.</h2>
+        </div>
+        <div class="industry-list reveal" aria-label="Industries served">
+          <span>Retail</span>
+          <span>Logistics and Transport</span>
+          <span>Fishing Industry</span>
+          <span>Hospitality and Tourism</span>
+          <span>Property Management</span>
+          <span>Professional Services</span>
+          <span>Construction</span>
+          <span>Small and Medium Enterprises</span>
+          <span>Non-Profit Organizations</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="leadership section" id="leadership">
+      <div class="container leadership__grid">
+        <div class="leadership__image reveal">
+          <img src="public/SSE Accounting ffirm.webp" alt="SSE Accounting Firm brand image" loading="lazy" />
+        </div>
+        <div class="leadership__content reveal">
+          <p class="eyebrow">Leadership</p>
+          <h2>Shante Klazen</h2>
+          <p>
+            Shante Klazen leads SSE Accounting Firm with a commitment to professional excellence, client service and community engagement. Through hands-on involvement and strategic leadership, she has helped establish the firm as a trusted partner for businesses seeking reliable accounting and financial management services.
+          </p>
+          <blockquote>
+            We strive to provide accurate financial solutions, professional guidance and trusted partnerships that enable our clients to focus on growing their businesses with confidence.
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="community section section--dark" id="community">
+      <div class="container community__inner reveal">
+        <p class="eyebrow">Community Involvement</p>
+        <h2>Committed to the community that grows alongside its businesses.</h2>
+        <p>
+          SSE Accounting Firm actively participates in community development initiatives and charitable projects, supporting programs that contribute to social and economic development.
         </p>
+      </div>
+    </section>
 
-        <!-- CTA Buttons -->
-        <div class="hero__actions" id="hero-actions">
-          <a href="#appointment" class="btn btn--primary" id="btn-appointment">Get Appointment</a>
-          <a href="#stories" class="btn btn--ghost" id="btn-stories">View Success Stories</a>
-          <button class="btn btn--icon" id="btn-arrow" aria-label="Learn more">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <line x1="7" y1="17" x2="17" y2="7" />
-              <polyline points="7,7 17,7 17,17" />
-            </svg>
-          </button>
+    <section class="contact section" id="contact">
+      <div class="container contact__grid">
+        <div class="section__heading reveal">
+          <p class="eyebrow">Contact Information</p>
+          <h2>Speak with SSE Accounting Firm.</h2>
+          <p>SSE Accounting Firm is based in Walvis Bay, Erongo Region, Namibia.</p>
+        </div>
+        <div class="contact__panel reveal">
+          <a href="mailto:directorklazen@outlook.com">directorklazen@outlook.com</a>
+          <a href="tel:+264813011487">+264 81 301 1487</a>
+          <p>Walvis Bay, Erongo Region, Namibia</p>
         </div>
       </div>
+    </section>
+  </main>
 
-      <!-- RIGHT: Portrait + Stats -->
-      <div class="hero__portrait-area">
-        <!-- Portrait Image -->
-        <img
-          src="public/Hero-image.webp"
-          alt="SSE Investments Director"
-          class="hero__portrait"
-          id="hero-portrait"
-          loading="eager"
-        />
-
-        <!-- Floating Stats Card -->
-        <div class="hero__stats-card" id="stats-card">
-          <div class="hero__stats-card-header">
-            <span class="hero__stats-card-label">Total Investment</span>
-            <span class="hero__stats-card-dots" aria-hidden="true">
-              <span></span>
-              <span></span>
-              <span></span>
-            </span>
-          </div>
-          <div class="hero__stats-card-value" id="stats-value">$0</div>
-          <div class="hero__chart" id="stats-chart">
-            <!-- Bar chart bars — heights set by JS -->
-            <div class="hero__chart-bar hero__chart-bar--light" style="height: 30%"></div>
-            <div class="hero__chart-bar hero__chart-bar--navy" style="height: 55%"></div>
-            <div class="hero__chart-bar hero__chart-bar--gold" style="height: 75%"></div>
-            <div class="hero__chart-bar hero__chart-bar--light" style="height: 40%"></div>
-            <div class="hero__chart-bar hero__chart-bar--navy" style="height: 90%"></div>
-            <div class="hero__chart-bar hero__chart-bar--gold" style="height: 100%"></div>
-          </div>
-        </div>
-      </div>
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>SSE Accounting Firm</p>
+      <p>Accounting, tax, payroll and advisory services across Namibia.</p>
     </div>
-  </section>
-
-  <!-- ========== TRUSTED COMPANIES ========== -->
-  <section class="trusted" id="trusted">
-    <div class="container trusted__inner">
-      <h2 class="trusted__headline reveal" id="trusted-headline">
-        Fueling Growth for Companies<br/>You <span>Know</span> and <span>Trust</span>
-      </h2>
-
-      <div class="trusted__logos reveal" id="trusted-logos">
-        <span class="trusted__logo trusted__logo--zoom">zoom</span>
-        <span class="trusted__logo trusted__logo--asus">/ASUS</span>
-        <span class="trusted__logo trusted__logo--aecom">AECOM</span>
-        <span class="trusted__logo trusted__logo--stripe">stripe</span>
-        <span class="trusted__logo trusted__logo--ebay">ebay</span>
-        <span class="trusted__logo trusted__logo--tencent">Tencent</span>
-      </div>
-    </div>
-  </section>
+  </footer>
 
   <script src="script.js"></script>
 </body>
