@@ -70,15 +70,13 @@ button {
   position: fixed;
   inset: 0 0 auto;
   z-index: 50;
-  background: rgba(251, 249, 248, 0.92);
-  border-bottom: 1px solid rgba(221, 225, 231, 0.75);
-  backdrop-filter: blur(14px);
-  transition: box-shadow 0.25s ease, background 0.25s ease;
+  background: #ffffff;
+  border-bottom: 0;
 }
 
 .navbar.scrolled {
-  background: rgba(251, 249, 248, 0.98);
-  box-shadow: 0 8px 24px rgba(0, 23, 58, 0.08);
+  background: #ffffff;
+  box-shadow: none;
 }
 
 .navbar__inner {
