@@ -230,7 +230,7 @@ button {
   align-items: center;
   justify-content: center;
   gap: 28px;
-  background: rgba(251, 249, 248, 0.98);
+  background: #ffffff;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.25s ease;
@@ -1457,6 +1457,19 @@ main > .industries::before {
 .industries__content h2 {
   max-width: 680px;
   color: var(--primary);
+}
+
+.mobile-nav .btn--primary {
+  min-width: 180px;
+  color: #ffffff;
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+.mobile-nav .btn--primary:hover,
+.mobile-nav .btn--primary:focus-visible {
+  color: #ffffff;
+  background: var(--primary-soft);
 }
 
 .industry-list {
