@@ -997,11 +997,10 @@ main > section:not(.hero):nth-of-type(odd)::before {
 }
 
 .story-panel__ledger div {
-  min-height: 144px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 22px;
+  min-height: 205px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  padding: 20px 22px 22px;
   background: rgba(255, 255, 255, 0.86);
   border: 1px solid rgba(221, 225, 231, 0.82);
   border-radius: 8px;
@@ -1028,11 +1027,20 @@ main > section:not(.hero):nth-of-type(odd)::before {
 }
 
 .story-panel__ledger strong {
-  max-width: 120px;
+  max-width: none;
   color: var(--primary);
   font-family: var(--font-display);
-  font-size: 20px;
+  font-size: 22px;
   line-height: 1.12;
+  text-align: center;
+}
+
+.story-panel__ledger-icon {
+  width: 150px;
+  height: 118px;
+  align-self: center;
+  justify-self: center;
+  object-fit: contain;
 }
 
 .proof-strip {
@@ -1700,6 +1708,11 @@ blockquote {
   .story-panel__ledger div {
     min-height: 118px;
     padding: 18px;
+  }
+
+  .story-panel__ledger-icon {
+    width: 128px;
+    height: 100px;
   }
 
   .story-panel__ledger strong {
