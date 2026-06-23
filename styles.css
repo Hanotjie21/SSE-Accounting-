@@ -299,8 +299,7 @@ button {
 .hero__headline,
 .section__heading h2,
 .statement h2,
-.leadership__content h2,
-.community__inner h2 {
+.leadership__content h2 {
   font-family: var(--font-display);
   color: var(--primary);
   letter-spacing: 0;
@@ -467,8 +466,7 @@ button {
 
 .section__heading h2,
 .statement h2,
-.leadership__content h2,
-.community__inner h2 {
+.leadership__content h2 {
   font-size: clamp(28px, 3.4vw, 44px);
   line-height: 1.12;
   font-weight: 800;
@@ -479,7 +477,6 @@ button {
 .statement p,
 .why-item p,
 .leadership__content p,
-.community__inner p,
 .contact__panel p {
   color: var(--muted);
 }
@@ -651,16 +648,6 @@ blockquote {
   font-size: 22px;
   line-height: 1.4;
   font-weight: 700;
-}
-
-.community__inner {
-  max-width: 780px;
-}
-
-.community__inner p {
-  margin-top: 18px;
-  font-size: 18px;
-  line-height: 1.75;
 }
 
 .contact__grid {
@@ -964,7 +951,6 @@ main > .post-hero::before {
 .values__header h2,
 .industries__content h2,
 .leadership__content h2,
-.community__inner h2,
 .contact .section__heading h2,
 .vision-card h2,
 .why .section__heading h2 {
@@ -981,7 +967,6 @@ main > .post-hero::before {
 .vision-card p,
 .why-item p,
 .leadership__content p,
-.community__inner p,
 .contact .section__heading p,
 .proof-strip p {
   color: var(--muted);
@@ -1620,42 +1605,6 @@ blockquote {
   line-height: 1.22;
 }
 
-.community {
-  background: var(--primary);
-  color: #ffffff;
-}
-
-.community::before {
-  border-color: rgba(253, 195, 77, 0.18) !important;
-}
-
-.community__inner {
-  max-width: none;
-  min-height: 410px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: clamp(32px, 6vw, 68px);
-  background:
-    linear-gradient(135deg, rgba(0, 23, 58, 0.42), rgba(0, 23, 58, 0.92)),
-    var(--primary);
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  border-radius: 8px;
-}
-
-.community__inner .eyebrow,
-.community__inner h2,
-.community__inner p {
-  color: #ffffff;
-}
-
-.community__inner p {
-  max-width: 720px;
-  margin-top: 20px;
-  font-size: 16px;
-  line-height: 1.72;
-}
-
 .contact {
   background: #ffffff;
 }
@@ -1837,10 +1786,6 @@ blockquote {
     min-height: 320px;
   }
 
-  .community__inner {
-    min-height: 330px;
-    padding: 28px;
-  }
 }
 
 @media (max-width: 520px) {
@@ -1849,7 +1794,6 @@ blockquote {
   .values__header h2,
   .industries__content h2,
   .leadership__content h2,
-  .community__inner h2,
   .contact .section__heading h2,
   .vision-card h2,
   .why .section__heading h2 {
