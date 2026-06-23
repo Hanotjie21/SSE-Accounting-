@@ -936,9 +936,9 @@ main > section:not(.hero):nth-of-type(odd)::before {
   background:
     linear-gradient(
       90deg,
-      rgba(255, 255, 255, 0.84) 0%,
-      rgba(255, 255, 255, 0.76) 48%,
-      rgba(255, 255, 255, 0.88) 100%
+      rgba(255, 255, 255, 0.76) 0%,
+      rgba(255, 255, 255, 0.68) 48%,
+      rgba(255, 255, 255, 0.8) 100%
     ),
     url('public/aboutbackground.webp') center center / cover no-repeat;
   padding-top: 112px;
