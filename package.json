@@ -1,0 +1,10 @@
+{
+  "name": "sse-accounting-website",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check:deploy": "npm run build && node scripts/verify-deploy.mjs"
+  }
+}

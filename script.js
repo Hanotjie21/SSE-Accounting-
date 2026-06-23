@@ -18,6 +18,7 @@
     initSmoothScroll();
     initChartAnimation();
     initStatsCardFloat();
+    initContactForm();
   });
 
   // ============================================
@@ -240,6 +241,78 @@
       if (e.animationName === 'floatIn') {
         statsCard.classList.add('visible');
       }
+    });
+  }
+
+  // ============================================
+  // CONTACT FORM DIRECT SUBMISSION
+  // ============================================
+  function initContactForm() {
+    var form = document.getElementById('contact-form');
+    var status = document.getElementById('contact-form-status');
+    if (!form) return;
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      var data = new FormData(form);
+      var name = String(data.get('name') || '').trim();
+      var email = String(data.get('email') || '').trim();
+      var phone = String(data.get('phone') || '').trim();
+      var service = String(data.get('service') || '').trim();
+      var message = String(data.get('message') || '').trim();
+      var honeypot = String(data.get('_honey') || '').trim();
+      var submitButton = form.querySelector('button[type="submit"]');
+
+      if (honeypot) return;
+
+      if (status) {
+        status.classList.remove('is-error', 'is-success');
+        status.textContent = 'Sending your inquiry…';
+      }
+
+      if (submitButton) {
+        submitButton.disabled = true;
+        submitButton.textContent = 'Sending…';
+      }
+
+      fetch(form.action, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({
+          name: name,
+          email: email,
+          phone: phone || 'Not provided',
+          service: service,
+          message: message,
+          _subject: 'New SSE Accounting website inquiry',
+          _template: 'table',
+          _captcha: 'false',
+        }),
+      })
+        .then(function (response) {
+          if (!response.ok) throw new Error('Submission failed');
+          form.reset();
+          if (status) {
+            status.classList.add('is-success');
+            status.textContent = 'Thank you. Your inquiry has been sent successfully.';
+          }
+        })
+        .catch(function () {
+          if (status) {
+            status.classList.add('is-error');
+            status.textContent = 'Your inquiry could not be sent. Please try again or call the firm.';
+          }
+        })
+        .finally(function () {
+          if (submitButton) {
+            submitButton.disabled = false;
+            submitButton.textContent = 'Send Inquiry';
+          }
+        });
     });
   }
 
