@@ -1112,38 +1112,6 @@ main > section:not(.hero):nth-of-type(odd)::before {
     var(--primary);
 }
 
-.vision-card__icon {
-  position: relative;
-  z-index: 1;
-  width: 58px;
-  height: 58px;
-  display: grid;
-  place-items: center;
-  margin-bottom: 26px;
-  color: var(--gold);
-  background: rgba(184, 134, 11, 0.08);
-  border: 1px solid rgba(184, 134, 11, 0.2);
-  border-radius: 50%;
-  box-shadow: 0 10px 28px rgba(184, 134, 11, 0.12);
-}
-
-.vision-card--primary .vision-card__icon {
-  color: var(--gold-soft);
-  background: rgba(255, 255, 255, 0.06);
-  border-color: rgba(253, 195, 77, 0.22);
-  box-shadow: 0 0 32px rgba(253, 195, 77, 0.12);
-}
-
-.vision-card__icon svg {
-  width: 32px;
-  height: 32px;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 1.8;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
 .vision-card .vision-card__label {
   position: relative;
   z-index: 1;
