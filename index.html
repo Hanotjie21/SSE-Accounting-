@@ -358,10 +358,10 @@
           <form
             class="contact__form reveal"
             id="contact-form"
-            action="mailto:directorklazen@outlook.com"
+            action="https://formsubmit.co/ajax/directorklazen@outlook.com"
             method="post"
-            enctype="text/plain"
           >
+            <input type="text" name="_honey" tabindex="-1" autocomplete="off" class="contact__honeypot" aria-hidden="true" />
             <div class="contact__form-grid">
               <label class="contact__field">
                 <span>Full name</span>
@@ -395,7 +395,7 @@
 
             <div class="contact__form-footer">
               <button type="submit" class="contact__submit">Send Inquiry</button>
-              <p id="contact-form-status" aria-live="polite">Submitting opens your email app with the inquiry ready to send.</p>
+              <p id="contact-form-status" class="contact__form-status" aria-live="polite"></p>
             </div>
           </form>
         </div>
@@ -406,7 +406,6 @@
   <footer class="footer">
     <div class="container footer__cta">
       <div>
-        <p class="eyebrow">Ready for clearer books?</p>
         <h2>Move forward with trusted accounting support.</h2>
       </div>
       <div class="footer__actions">
