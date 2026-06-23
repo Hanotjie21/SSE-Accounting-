@@ -328,16 +328,76 @@
     </section>
 
     <section class="contact section" id="contact">
-      <div class="container contact__grid">
-        <div class="section__heading reveal">
-          <p class="eyebrow">Contact Information</p>
-          <h2>Speak with SSE Accounting Firm.</h2>
-          <p>SSE Accounting Firm is based in Walvis Bay, Erongo Region, Namibia.</p>
+      <div class="container">
+        <div class="contact__intro reveal">
+          <p class="eyebrow">Start a Conversation</p>
+          <h2>Tell us how we can support your business.</h2>
+          <p>Share a few details and SSE Accounting Firm will help you identify the right next step.</p>
         </div>
-        <div class="contact__panel reveal">
-          <a href="mailto:directorklazen@outlook.com">directorklazen@outlook.com</a>
-          <a href="tel:+264813011487">+264 81 301 1487</a>
-          <p>Walvis Bay, Erongo Region, Namibia</p>
+
+        <div class="contact__layout">
+          <aside class="contact__details reveal">
+            <p class="contact__details-label">Contact Details</p>
+            <h3>Professional guidance starts with a conversation.</h3>
+            <p class="contact__details-copy">Connect with the firm directly or send an inquiry using the form.</p>
+
+            <div class="contact__detail">
+              <span>Email</span>
+              <a href="mailto:directorklazen@outlook.com">directorklazen@outlook.com</a>
+            </div>
+            <div class="contact__detail">
+              <span>Telephone</span>
+              <a href="tel:+264813011487">+264 81 301 1487</a>
+            </div>
+            <div class="contact__detail">
+              <span>Location</span>
+              <p>Walvis Bay, Erongo Region, Namibia</p>
+            </div>
+          </aside>
+
+          <form
+            class="contact__form reveal"
+            id="contact-form"
+            action="mailto:directorklazen@outlook.com"
+            method="post"
+            enctype="text/plain"
+          >
+            <div class="contact__form-grid">
+              <label class="contact__field">
+                <span>Full name</span>
+                <input type="text" name="name" autocomplete="name" required />
+              </label>
+              <label class="contact__field">
+                <span>Email address</span>
+                <input type="email" name="email" autocomplete="email" required />
+              </label>
+              <label class="contact__field">
+                <span>Phone number</span>
+                <input type="tel" name="phone" autocomplete="tel" />
+              </label>
+              <label class="contact__field">
+                <span>Service needed</span>
+                <select name="service" required>
+                  <option value="" selected disabled>Select a service</option>
+                  <option>Accounting &amp; Bookkeeping</option>
+                  <option>Tax Services</option>
+                  <option>Payroll Services</option>
+                  <option>Financial Management</option>
+                  <option>Business Advisory</option>
+                  <option>Compliance Services</option>
+                </select>
+              </label>
+              <label class="contact__field contact__field--full">
+                <span>How can we help?</span>
+                <textarea name="message" rows="6" required></textarea>
+              </label>
+            </div>
+
+            <div class="contact__form-footer">
+              <button type="submit" class="contact__submit">Send Inquiry</button>
+              <p id="contact-form-status" aria-live="polite">Submitting opens your email app with the inquiry ready to send.</p>
+            </div>
+          </form>
         </div>
       </div>
     </section>

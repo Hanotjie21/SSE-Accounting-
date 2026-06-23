@@ -18,6 +18,7 @@
     initSmoothScroll();
     initChartAnimation();
     initStatsCardFloat();
+    initContactForm();
   });
 
   // ============================================
@@ -240,6 +241,46 @@
       if (e.animationName === 'floatIn') {
         statsCard.classList.add('visible');
       }
+    });
+  }
+
+  // ============================================
+  // CONTACT FORM EMAIL COMPOSER
+  // ============================================
+  function initContactForm() {
+    var form = document.getElementById('contact-form');
+    var status = document.getElementById('contact-form-status');
+    if (!form) return;
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      var data = new FormData(form);
+      var name = String(data.get('name') || '').trim();
+      var email = String(data.get('email') || '').trim();
+      var phone = String(data.get('phone') || '').trim();
+      var service = String(data.get('service') || '').trim();
+      var message = String(data.get('message') || '').trim();
+      var subject = 'Website inquiry from ' + name;
+      var body = [
+        'Name: ' + name,
+        'Email: ' + email,
+        'Phone: ' + (phone || 'Not provided'),
+        'Service: ' + service,
+        '',
+        'Message:',
+        message,
+      ].join('\n');
+
+      if (status) {
+        status.textContent = 'Opening your email app with the inquiry ready to send…';
+      }
+
+      window.location.href =
+        'mailto:directorklazen@outlook.com?subject=' +
+        encodeURIComponent(subject) +
+        '&body=' +
+        encodeURIComponent(body);
     });
   }
 
