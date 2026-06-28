@@ -17,7 +17,8 @@ const requiredFiles = [
   'public/payroll.webp',
   'public/advisory.webp',
   'public/whychoseus.webp',
-  'public/industries.webp',
+  'public/industries.png',
+  'public/industryperson image.jpeg',
   'public/leadershipimage.webp'
 ];
 
